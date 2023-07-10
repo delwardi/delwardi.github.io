@@ -1,47 +1,87 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digimind Phishing</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .header {
+      background-color: #000;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .navLink {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    .navLink a {
+      color: #EF5350;
+      text-decoration: none;
+    }
+
+    .jumbotron {
+      background-color: #f8f8f8;
+      padding: 30px;
+      margin-top: 20px;
+    }
+
+    .tip {
+      margin-bottom: 30px;
+    }
+
+    .tip h3 {
+      margin: 0;
+      color: #EF5350;
+    }
+
+    .tip h4 {
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .tip p {
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
 <body>
-<p> </p>
+  <div class="header">
+    <div class="navLink">
+      <h3><a href="https://www.google.com/search?q=digimind&amp;client=firefox-b-e&amp;tbm=isch&amp;source=iu&amp;ictx=1&amp;vet=1&amp;fir=sx41EvBrVEQjIM%252CGdzsnk8q2f5ilM%252C%252Fm%252F0n8_f8h&amp;usg=AI4_-kRbP7BXCuh2coRYcQn1VAX3upLJMA&amp;sa=X&amp;ved=2ahUKEwi6kp6Aqq7_AhUGUqQEHchdC5gQ_B16BAhbEAI&amp;biw=1920&amp;bih=697&amp;dpr=1#imgrc=sx41EvBrVEQjIM">Phishing Test</a></h3>
+    </div>
+  </div>
 
-<p> </p>
-
-
-<p><br/>
-<title>Digimind Phishing</title>
-</p>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-<style type="text/css">.header{
-    background-color: #000;
-  }
-  .navLink{
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  b{
-    color:#EF5350;
-  }
-</style>
-<div class="header" style="text-align:left;">
-<div class="navLink">
-<h3 style="margin:0;"><a href="https://www.google.com/search?q=digimind&amp;client=firefox-b-e&amp;tbm=isch&amp;source=iu&amp;ictx=1&amp;vet=1&amp;fir=sx41EvBrVEQjIM%252CGdzsnk8q2f5ilM%252C%252Fm%252F0n8_f8h&amp;usg=AI4_-kRbP7BXCuh2coRYcQn1VAX3upLJMA&amp;sa=X&amp;ved=2ahUKEwi6kp6Aqq7_AhUGUqQEHchdC5gQ_B16BAhbEAI&amp;biw=1920&amp;bih=697&amp;dpr=1#imgrc=sx41EvBrVEQjIM"><img alt="" src="data:image/png;base64,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" style="width: 80px; height: 40px;"/></a><b> Phishing Test</b></h3>
-</div>
-</div>
-
-<div class="container" style="text-align:center">
-<div class="jumbotron">
-<h2>You clicked on a simulated phishing test.</h2><h3>Here are some tips to help you stay safer in the future:</h3><div class="row"> <div class="col-md-4"> 
-<h1>Tip #1</h1> <h2>Stop, Look, Think</h2> <p>Did anything appear unusual? Did you recognize the sender's address? Was it similar to an official email but not exactly the same?</p> <pre></pre> <p style="font-size:0.9em;"><img src="https://drive.google.com/file/d/1z-Ql7WB5P8Udi2gDXBrXXchlZgxeNAnz/view?usp=sharing" alt="External Email" style="height:16px;width:auto;margin-right:5px;">From: messagerie.instantanee66@gmail.com &lt;security@digimind.com&gt;</p> </div> <div class="col-md-4"> 
-<h1>Tip #2</h1> <h2>Do you spot a red flag?</h2> 
-<p>At Digimind, any email from an external sender should have a caution message at the very top. Do you see this banner?</p> <img src="https://drive.google.com/file/d/1eSSv-Ui97w57S3TttS7xdT4MlKbZ-Wio/view?usp=sharing" width="50%"/> </div> <div class="col-md-4"> <h1>Tip #3</h1> <h2>When in doubt, throw it out</h2> <p>If you ever suspect that an email is suspicious, it's better to be cautious. Forward it to security@digimind.com.</p> </div></div>
-<footer>© 2023 GitHub, Inc. Footer navigation Terms Privacy Security Status Docs Contact GitHub Pricing API Training Blog About</footer>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>You clicked on a simulated phishing test.</h2>
+      <h3>Here are some tips to help you stay safer in the future:</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="tip">
+            <h4>Tip #1: Stop, Look, Think</h4>
+            <p>Did anything appear unusual? Did you recognize the sender's address? Was it similar to an official email but not exactly the same?</p>
+            <p>If in doubt, exercise caution and scrutinize the email further.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tip">
+            <h4>Tip #2: Do you spot a red flag?</h4>
+            <p>At Digimind, any email from an external sender should have a caution message at the very top. Keep an eye out for this banner.</p>
+            <p>If the email lacks the expected banner, consider it suspicious.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tip">
+            <h4>Tip #3: When in doubt, throw it out</h4>
+            <p>If you ever suspect that an email is suspicious, it's better to be cautious. Forward it to security@digimind.com for further investigation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>© 2023 GitHub, Inc. Footer navigation Terms Privacy Security Status Docs Contact GitHub Pricing API Training Blog About</footer>
+  </div>
 </body>
 </html>
-
-
-
-
-
-
